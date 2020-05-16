@@ -1,0 +1,140 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Katalog Output nie kończy się ukośnikiem. To wystąpienie kompilacji doda ukośnik, ponieważ jest on niezbędny, aby możliwa była poprawna ocena katalogu Output.
+  mySocket.cpp
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\mySocket.cpp(46,73): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\mySocket.cpp(134,53): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+  Źródło.cpp
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.h(12,18): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(16,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(17,42): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(17,36): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(19,47): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(19,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(23,48): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(23,42): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(27,35): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(73,55): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(73,37): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(82,52): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(82,36): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(91,52): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(91,36): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(95,16): warning C4305: "=": obcięcie z "double" do "float"
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(211,51): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(211,41): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(216,70): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(216,51): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(221,77): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(221,57): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(225,60): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(225,44): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(351,59): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(351,36): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(360,59): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(360,36): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(370,62): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(370,39): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(378,49): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\atmat\source\repos\SFML_test_01\SFML_test_01\Źródło.cpp(378,37): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Init_FreeType
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Done_FreeType
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_New_Face
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_New_Memory_Face
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Open_Face
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Done_Face
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Set_Pixel_Sizes
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Load_Char
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Get_Kerning
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Select_Charmap
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Get_Char_Index
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_MulFix
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Get_Glyph
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Glyph_To_Bitmap
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Done_Glyph
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Outline_Embolden
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Bitmap_Embolden
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Stroker_New
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Stroker_Set
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Stroker_Done
+sfml-graphics-s.lib(Font.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny FT_Glyph_Stroke
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glBlendFunc
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glClear
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glClearColor
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glDisable
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glEnable
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glLoadIdentity
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glLoadIdentity
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glLoadMatrixf
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glLoadMatrixf
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glMatrixMode
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glMatrixMode
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glPopAttrib
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glPopMatrix
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glPushAttrib
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glPushMatrix
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glViewport
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glColorPointer
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glDisableClientState
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glDrawArrays
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glEnableClientState
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glPopClientAttrib
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glPushClientAttrib
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glTexCoordPointer
+sfml-graphics-s.lib(RenderTarget.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glVertexPointer
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glFlush
+sfml-graphics-s.lib(Shader.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glFlush
+sfml-graphics-s.lib(TextureSaver.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glGetIntegerv
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glGetIntegerv
+sfml-graphics-s.lib(RenderTextureImplFBO.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glGetIntegerv
+sfml-graphics-s.lib(Shader.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glGetIntegerv
+sfml-graphics-s.lib(GLExtensions.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glGetIntegerv
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glGetTexImage
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glTexImage2D
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glTexParameteri
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glBindTexture
+sfml-graphics-s.lib(TextureSaver.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glBindTexture
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glCopyTexSubImage2D
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glDeleteTextures
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glGenTextures
+sfml-graphics-s.lib(Texture.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glTexSubImage2D
+sfml-graphics-s.lib(GLExtensions.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glGetError
+sfml-graphics-s.lib(GLExtensions.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny glGetString
+sfml-window-s.lib(GlContext.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_glEnable
+sfml-window-s.lib(GlContext.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_glGetError
+sfml-window-s.lib(GlContext.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_glGetIntegerv
+sfml-window-s.lib(GlContext.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_glGetString
+sfml-window-s.lib(GlContext.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_glIsEnabled
+sfml-window-s.lib(WglContext.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_wglCreateContext
+sfml-window-s.lib(WglContext.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_wglDeleteContext
+sfml-window-s.lib(WglContext.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_wglGetProcAddress
+sfml-window-s.lib(WglContext.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_wglMakeCurrent
+sfml-window-s.lib(WglContext.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_wglShareLists
+sfml-window-s.lib(JoystickImpl.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_joyGetPosEx
+sfml-window-s.lib(JoystickImpl.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_joyGetDevCapsW
+sfml-system-s.lib(SleepImpl.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_timeGetDevCaps
+sfml-system-s.lib(SleepImpl.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_timeBeginPeriod
+sfml-system-s.lib(SleepImpl.cpp.obj) : error LNK2001: nierozpoznany symbol zewnętrzny __imp_timeEndPeriod
+.\SFML_test_01.exe : fatal error LNK1120: liczba nierozpoznanych elementów zewnętrznych: 69
