@@ -2,7 +2,7 @@
 #include "èrÛd≥o.h"
 
 int main() {
-   
+    srand(time(NULL));
     sf::Event event;
     sf::Texture t1;
     t1.loadFromFile("images\\white.png");
@@ -12,6 +12,16 @@ int main() {
     t2.loadFromFile("images\\menu.png");
     sf::Sprite sprite2(t2);
 
+    for (int a = 0; a < count; a++) {
+        textures[a].loadFromFile(colors[a]);
+        Block[a].setTexture(textures[a]);
+    }
+
+    // Poczatek gry
+    ClearScene();
+    CreateNewObject();
+    GetNewObject();
+    CreateNewObject();
     while (window.isOpen())
     {
         while (window.pollEvent(event)) {
@@ -29,7 +39,6 @@ int main() {
                 window.draw(sprite2);
             }
         
-        CreateNewObject();
         DrawObject();
         window.display();
         UpdateObjects();
@@ -38,22 +47,58 @@ int main() {
 
 void CreateNewObject() {
     for (int a = 0; a < 4; a++) {
-        int i = DefinedObjects[0][a] / 4;
-        int j = DefinedObjects[0][a] % 4;
-        shape[i][j] = 1;
+        for (int b = 0; b < 4; b++) {
+            newShape[a][b] = 0;
+        }
+    }
+    int num = rand() % 7;
+    for (int a = 0; a < 4; a++) {
+        int i = DefinedObjects[num][a] / 4;
+        int j = DefinedObjects[num][a] % 4;
+        newShape[i][j] = num + 1;
+    }
+}
+
+void GetNewObject() {
+    for (int a = 0; a < 4; a++) {
+        for (int b = 0; b < 4; b++) {
+            shape[a][b] = newShape[a][b];
+        }
     }
 }
 
 void DrawObject() {
-    sf::Texture texture;
-    texture.loadFromFile("images\\yellow.png");
-    sf::Sprite Block(texture);
+    int Val;
     for (int a = 0; a < 4; a++) {
         for (int b = 0; b < 4; b++) {
-            if (shape[b][a] > 0) {
-                Block.setPosition(size * a + X, size * b + Y);
-                window.draw(Block);
+            if (shape[a][b] > 0) {
+                Val = shape[a][b] - 1;
+                Block[Val].setPosition(size * a + X, size * b + Y);
+                window.draw(Block[Val]);
             }
+            if (newShape[a][b] > 0) {
+                Val = newShape[a][b] - 1;
+                Block[Val].setPosition(size * a + size * w + 40, size * b + 170);
+                window.draw(Block[Val]);
+            }
+        }
+    }
+    // Rysowanie sceny
+    for (int a = 0; a < w; a++) {
+        for (int b = 0; b < h; b++) {
+            if (scene[a][b] > 0) {
+                Val = scene[a][b] - 1;
+                Block[Val].setPosition(size * a, size * b);
+                window.draw(Block[Val]);
+            }
+        }
+    }
+}
+
+void ClearScene() {
+    for (int a = 0; a < w; a++) {
+        for (int b = 0; b < h; b++) {
+            scene[a][b] = 0;
         }
     }
 }
@@ -65,5 +110,35 @@ void UpdateObjects() {
     if (chrono > delay) {
         chrono = 0;
         Y += size;
+    }
+    for (int a = 0; a < 4; a++) {
+        for (int b = 0; b < 4; b++) {
+            if (shape[a][b] > 0) {
+                if (b * size + Y >= size * h) {
+                    JoinToScene();
+                    Y = 0;
+                    GetNewObject();
+                    CreateNewObject();
+                }
+                if (scene[X / size + a][Y / size + b] > 0) {
+                    JoinToScene();
+                    Y = 0;
+                    GetNewObject();
+                    CreateNewObject();
+                }
+            }
+        }
+    }
+}
+
+void JoinToScene() {
+    int x = X / size;
+    int y = Y / size - 1;
+    for (int a = 0; a < 4; a++) {
+        for (int b = 0; b < 4; b++) {
+            if (shape[a][b] > 0) {
+                scene[a + x][b + y] = shape[a][b];
+            }
+        }
     }
 }
