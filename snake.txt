@@ -1,0 +1,304 @@
+#include <SFML/Graphics.hpp>
+int w = 10, h = 20;
+int size = 32;
+int width = size * w+200; //520 
+int height = size * h; //640
+int shape[4][4] = {};
+
+int main() {
+	sf::RenderWindow window(sf::VideoMode(width, height), "Tetris");
+	sf::Event event;
+	sf::Texture t1;
+	t1.loadFromFile("images\\white.png");
+	sf::Sprite sprite1(t1);
+
+	sf::Texture t2;
+	t2.loadFromFile("images\\menu.png");
+	sf::Sprite sprite2(t2);
+
+	while (window.isOpen())
+	{
+		while (window.pollEvent(event)) {
+			if (event.type == sf::Event::EventType::Closed)
+				window.close();
+		}
+
+
+		window.clear(sf:
+#include <iostream>
+#include <SFML/Graphics.hpp>
+#include <time.h>
+#include <ctime>
+#include <cstdlib>
+#include <random>
+#include "Źródło.h"
+#include <fstream>
+#include <string>
+
+#include "mySnake.h"
+#include "mySocket.h"
+#include "myApple.h"
+#include "myMenu.h"
+
+mySocket mysocket;
+mySnake snake1;
+myApple myallpe;
+myMenu menu;
+
+int main() {
+    srand(time(NULL));
+    snake1.Init(sf::Vector2f(Size, Size), sf::Color::Green, Size, vertical, horizontal);
+    myallpe.Init(Size, sf::Color::Red, vertical, horizontal);
+    myallpe.Generate();
+    std::ifstream input("score.txt");
+    if (!input.is_open()) {
+        std::ofstream output("score.txt");
+        output.close();
+    }
+    for (int i = 0; i < scorescount; i++) {
+        input >> topscore[i];
+    }
+    input.close();
+
+    while (window.isOpen()) {
+        Menu();
+        GameLoop();
+        window.clear();
+    }
+}
+
+
+
+void Menu() {
+    int fontsize = Size * 4;
+
+    menu.Init("minotaur.ttf", width);
+    menu.AddText("SNAKE", fontsize*1.5, height / 8, &window);
+    menu.AddText("Easy", fontsize, 0, &window);
+    menu.AddText("Normal", fontsize, 0, &window);
+    menu.AddText("Hard", fontsize, 0, &window);
+    menu.AddText("Exit", fontsize, 0, &window);
+    int select = menu.GetSelect(1, &window);
+    switch (select) {
+    case 4: {
+        window.close();
+        return;
+    }
+    case 1: {
+        delay = 0.1;
+        break;
+    }
+    case 2: {
+        delay = 0.1/2;
+        break;
+    }
+    case 3: {
+        delay = 0.1/3;
+        break;
+    }
+    }
+
+    multiplayer = 0;
+    
+    window.clear();
+    window.display();
+}
+
+void GameLoop() {
+    while (window.isOpen()) {
+        float time = zegar.getElapsedTime().asSeconds();
+        zegar.restart();
+        chrono += time;
+        sf::Event event;
+        while (window.pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                window.close();
+            }
+        }
+        snake1.UpdateInput();
+        /*
+        if (multiplayer == 0 || multiplayer == 2) {
+            //  Singleplayer || Server
+
+        }
+        else if (multiplayer == 1 || multiplayer == 3) {
+            //             One PC || Client
+
+        }
+        if (multiplayer == 2) {
+            
+            // Server
+            std::string dir = "1";
+            //direction2 = stoi(mysocket.ServerRecivAndEcho(std::to_string(direction)));  // Funkcja blokuje kod aż do odebrania danych, osłabia to sterowanie
+
+            std::cout << direction2 << std::endl;
+            if (!gameAction()) return;
+        }
+        else {
+            */
+            if (chrono > delay) {
+                chrono = 0;
+                /*
+                if (multiplayer == 3) {
+                    // Client
+                    std::string dir = "2";
+                    //direction = stoi(mysocket.ClientSendAndEcho(std::to_string(direction2)));
+                    std::cout << direction << std::endl;
+                }*/
+                int score = snake1.UpdateAction(&myallpe);
+                if (score >= 0) {
+                    endgame(score);
+                    return; 
+                }
+            }
+        //}
+        
+        window.clear();
+        /*
+        for (int i = 0; i < vertical; i++) {
+            for (int j = 0; j < horizontal; j++) {
+                rectangle.setPosition(j * Size, i * Size);
+                window.draw(rectangle);
+            }
+        }*/
+        snake1.DrawSnake(&window);
+        myallpe.DrawApple(&window);
+
+        window.display();
+    }
+}
+
+
+
+
+void ScoreBoard() {
+    sf::Font myfont;
+    sf::Text menutext;
+    sf::Text exittext;
+    sf::Text scoretext;
+    std::string text;
+    int fontsize = Size * 4;
+    int offset = height / 8;
+    if (!myfont.loadFromFile("minotaur.ttf"))
+    {
+        // error...
+    }
+    menutext.setFont(myfont);
+    menutext.setString("Press B (back to Menu)");
+    menutext.setCharacterSize(fontsize / 4);
+    menutext.setFillColor(sf::Color::Red);
+    menutext.setStyle(sf::Text::Bold);
+    offset += fontsize * 1;
+    menutext.setPosition(width / 3 - fontsize * 2, offset / 8);
+    window.draw(menutext);
+
+    exittext.setFont(myfont);
+    exittext.setString("Press Esc to Exit");
+    exittext.setCharacterSize(fontsize / 4);
+    exittext.setFillColor(sf::Color::Red);
+    exittext.setStyle(sf::Text::Bold);
+    offset += fontsize * 1;
+    exittext.setPosition(width / 3 - fontsize * 2, offset / 5);
+    window.draw(exittext);
+
+
+    scoretext.setFont(myfont);
+    scoretext.setString("Best scores:");
+    scoretext.setCharacterSize(fontsize / 2);
+    scoretext.setFillColor(sf::Color::Red);
+    scoretext.setStyle(sf::Text::Bold);
+    offset += fontsize * 1;
+    scoretext.setPosition(width / 1.7 - fontsize * 2, offset / 3);
+    window.draw(scoretext);
+
+    for (int i = 0; i < scorescount; i++) {
+        text = std::to_string(topscore[i]);
+        scoretext.setString(text);
+        scoretext.setCharacterSize(fontsize / 4);
+        offset += fontsize;
+        scoretext.setPosition(width / 2, offset / 2.5);
+        window.draw(scoretext);
+    }
+
+    window.display();
+    while (window.isOpen()) {
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::B))
+        {
+            window.clear();
+            return;
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+        {
+            window.close();
+        }
+        //window.display();
+    }
+}
+
+void endgame(int bodysocre) {
+    window.clear();
+
+    /*if (multiplayer == 1) {
+        if (body2 > body) bodysocre = body2;
+    }
+    else if (multiplayer == 2) {
+        bodysocre = body - 3;
+        mysocket.ServerStop();
+    }
+    else if (multiplayer == 3) {
+        bodysocre = body2;
+        mysocket.ClientStop();
+    }*/
+    multiplayer = 0;
+    std::ofstream output;
+
+    for (int j = 0; j < scorescount; j++)
+    {
+        if (topscore[j] < bodysocre)
+        {
+            topscore[j] = bodysocre;
+            output.open("score.txt", std::ofstream::out | std::ofstream::trunc);
+            for (int i = 0; i < scorescount; i++)
+            {
+                output << topscore[i] << "\n";
+            }
+            output.close();
+            break;
+        }
+    }
+    ScoreBoard();
+}:Color::White);
+		for (int i = 0;i < w;i++)
+			for(int j = 0;j < h;j++) {
+				sprite1.setPosition(i * size, j * size);
+				sprite2.setPosition(330,20);
+			window.draw(sprite1);
+			window.draw(sprite2);
+		}
+		window.display();
+	}
+}
+
+
+
+#include <time.h>
+
+int Size = 25;
+int vertical = 30;
+int horizontal = 30;
+int width = Size * horizontal;
+int height = Size * vertical;
+
+int topscore[10] = { 0,0,0,0,0,0,0,0,0,0 };
+float chrono = 0;
+float delay = 0.1;
+int scorescount = 10;
+int multiplayer = 0;
+
+sf::RenderWindow window(sf::VideoMode(width, height), "Snake");
+sf::Clock zegar;
+
+void Menu();
+void ScoreBoard();
+void endgame(int bodysocre);
+void GameLoop();
